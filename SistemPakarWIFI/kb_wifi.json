@@ -1,0 +1,48 @@
+
+{
+  "judul": "Penyebab Gangguan WiFi dan Internet",
+  "batas": "Aturan berasal dari 2 dokumentasi resmi, yaitu Microsoft Support dan Cisco. Diagnosis hanya mencakup WiFi tidak aktif, nama jaringan tidak terlihat, kegagalan koneksi, gangguan akses internet, gangguan pada perangkat lain, dan sinyal WiFi lemah. Hasilnya merupakan saran awal, bukan keputusan teknis akhir.",
+
+  "sumber": {
+    "S1": "Fix Wi-Fi connection issues in Windows, Microsoft Support, https://support.microsoft.com/id-id/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows, diakses 5 Nov 2026",
+    "S2": "Troubleshoot Wireless Speed Issues, Cisco, https://www.cisco.com/c/en/us/support/docs/wireless/wireless-lan-controller-software/220877-troubleshoot-wireless-speed-issues.html, diakses 5 Nov 2026"
+  },
+
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["WiFi tidak aktif"],
+      "mode": "dan",
+      "maka": "gangguan pada perangkat pengguna",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "jika": ["WiFi aktif", "nama jaringan tidak terlihat"],
+      "mode": "dan",
+      "maka": "gangguan pada router atau jaringan WiFi",
+      "sumber": "S1"
+    },
+    {
+      "id": "R3",
+      "jika": ["perangkat terhubung", "internet tidak dapat diakses", "perangkat lain juga mengalami gangguan"],
+      "mode": "dan",
+      "maka": "gangguan pada jaringan internet, modem, atau ISP",
+      "sumber": "S1"
+    },
+    {
+      "id": "R4",
+      "jika": ["perangkat terhubung", "internet tidak dapat diakses", "perangkat lain tidak mengalami gangguan"],
+      "mode": "dan",
+      "maka": "gangguan pada perangkat pengguna",
+      "sumber": "S1"
+    },
+    {
+      "id": "R5",
+      "jika": ["sinyal WiFi lemah", "koneksi membaik ketika perangkat didekatkan ke router"],
+      "mode": "dan",
+      "maka": "gangguan pada jangkauan sinyal WiFi",
+      "sumber": "S2"
+    }
+  ]
+}
