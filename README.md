@@ -171,7 +171,9 @@ Pengujian dilakukan menggunakan empat kasus untuk memastikan sistem dapat mencoc
 
 **Screenshot hasil pengujian:**
 
-![Pengujian kasus 4 - Tidak ditemukan diagnosis](screenshot/kasus4.png)
+![Pengujian kasus 1 - Gangguan Jaringan Internet, Modem, atau ISP](kasus1.png)
+![Pengujian kasus 2 - Gangguan pada Perangkat Pengguna](kasus2.png)
+![Pengujian kasus 3 - Gangguan pada Router atau Jaringan WiFi](kasus3.png)
 
 ## 6. Batas Keberlakuan Sistem
 
