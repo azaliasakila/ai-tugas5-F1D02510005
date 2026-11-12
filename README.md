@@ -14,7 +14,7 @@ Program ini merupakan sistem pakar sederhana untuk mendiagnosis penyebab ganggua
 ### Teknologi yang Digunakan
 
 - Bahasa pemrograman: Python
-- Versi: Python 3.x
+- Versi: Python 3.12
 - Basis pengetahuan: JSON (`kb_wifi.json`)
 - Library: `json` (library bawaan Python)
 
